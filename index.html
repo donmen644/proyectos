@@ -4,79 +4,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>se escribir el en html</title>
+    <title>Mi pagina web</title>
     <style>
         body {
             margin: 10px;
         }
+
         header {
-            background-color: green ;
+            background-color: green;
             width: 100%;
-            height: 120px;
-           
-                    
-        }
+            height: 70px;
 
-        header img {
-            width: 100px;
-            margin-top: 8px;
-            margin-left: 40px;
 
         }
 
-        p:first-child{
-            color:red;
+        .header__img {
+            width: 200px;
+            margin-top: 4px;
+            margin-left: 1px;
+
         }
-            q {
-                color:tomato
 
-            }
-                    p:last-child {
-                        color:brown
-                    }
-                    p:nth-child(2n) {
-                        color:rgb(7, 7, 7)
-                    }
-                    p:nth-child(2n+1) {
-                        color:blue
+        p:first-child {
+            color: red;
+        }
 
-                    }
-                    p::first-letter{
-                        color:red;
-                        font: 40px;
-                    }
-                    body{margin: 0px;
-                    background-image: url("./Asset/images/red1.jpg");}
-                    .caja 
-                    { 
-                        background-color: #000000;
-                        width: 20px;
-                        height: 20px;
-                        padding: 20px;
-                        border: 20px solid #E6AF2E;
-                        margin: 100px 110px 120px 130px;
-                    }
-                    li{
-                        margin-left: 15px;
-                        margin-top: 5px;
-                    }
-                    #joto{
-                        color: teal;
-                        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-                    }
- 
+        q {
+            color: tomato
+        }
+
+        p:last-child {
+            color: brown
+        }
+
+        p:nth-child(2n) {
+            color: rgb(7, 7, 7)
+        }
+
+        p:nth-child(2n+1) {
+            color: blue
+        }
+
+        p::first-letter {
+            color: red;
+            font: 40px;
+        }
+
+        body {
+            margin: 0px;
+            background-image: url("./Asset/images/red1.jpg");
+        }
+
+        .caja {
+            background-color: #000000;
+            width: 20px;
+            height: 20px;
+            padding: 20px;
+            border: 20px solid #E6AF2E;
+            margin: 100px 110px 120px 130px;
+        }
+
+        li {
+            margin-left: 15px;
+            margin-top: 5px;
+        }
+
+        #joto {
+            color: teal;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        #Log {
+            margin-top: 100px;
+            margin-left: 100px;
+
+        }
+
+        .main {
+
+            padding: 50px;
+
+        }
+
+        .main__form {
+            width: 358px;
+            margin: 0 auto;
+
+        }
+        .header__menu{
+            margin-right: 30px;
+        }
     </style>
 
-               
+
 </head>
+
 <body>
 
-    <header>  
-        
-    <img src="./Asset/images/coffe.png" alt="">
-    
+    <header class="header">
+
+        <img class="header__img" class1="main__img@" src="./Asset/images/logo-platzi-video-BW2.png" alt="">
+<div class="header__menu">
+<div class="header__menu--profile">
+<img src="" alt="">
+<p>Perfil</p>
+</div>
+</div>
     </header>
- 
+
+    <section class="main">
+
+        <form class="main__form">
+
+
+            <input class="main__form--input" type="text" placeholder="Nombre">
+            <input class="main__form--input" type="text" placeholder="Contraseña">
+
+        </form>
+    </section>
     <nav>
         <ul>
             <li><a href="">Cuenta</a></li>
@@ -85,18 +130,18 @@
     </nav>
     <h1>Esta es mi primera vez programandig</h1>
     <div>
-        
-            <p>Estoy triste el davido me regaño </p>
-        
+
+        <p>Estoy triste el davido me regaño </p>
+
 
         <p id="joto">1 A</p>
         <p>2 B</p>
         <p>3 C</p>
         <p>4 D</p>
 
-       </div>
-        </ol>
-     <main>
+    </div>
+    </ol>
+    <main>
         Seccion Principal
     </main>
     <nav>
@@ -110,9 +155,9 @@
     </section>
     <div class="caja"></div>
 
-    <img  id="Log" src="file:///Users/carlo/Downloads/logo-platzi-video-BW2.png" alt="">
-    
-</header>
+    <img id="Log" src="file:///Users/carlo/Downloads/logo-platzi-video-BW2.png" alt="">
+
+    </header>
 
 </body>
 
