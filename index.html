@@ -4,61 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+
     <title>Mi pagina web</title>
+
     <style>
-        body {
-            margin: 10px;
-        }
-
-        header {
-            background-color: green;
-            width: 100%;
-            height: 70px;
-
-
-        }
-
-        .header__img {
-            width: 200px;
-            margin-top: 4px;
-            margin-left: 1px;
-
-        }
-
-        p:first-child {
-            color: red;
-        }
-
-        q {
-            color: tomato
-        }
-
-        p:last-child {
-            color: brown
-        }
-
-        p:nth-child(2n) {
-            color: rgb(7, 7, 7)
-        }
-
-        p:nth-child(2n+1) {
-            color: blue
-        }
-
-        p::first-letter {
-            color: red;
-            font: 40px;
-        }
 
         body {
             margin: 0px;
             background-image: url("./Asset/images/red1.jpg");
         }
 
-        li {
-            margin-left: 15px;
-            margin-top: 5px;
-        }
 
         #joto {
             color: teal;
@@ -66,8 +23,8 @@
         }
 
         #Log {
-            margin-top: 100px;
-            margin-left: 100px;
+            margin-top: 150px;
+            margin-left: -500px;
 
         }
 
@@ -83,15 +40,117 @@
 
         }
 
-        .header__menu {
-            margin-right: 30px;
-        }
-        .main1{
+
+        .main1 {
             margin-top: 10px;
             font-family: Arial, Helvetica, sans-serif;
             font-size: 24em;
             font-style: italic;
         }
+
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin: 0px;
+            background-color: violet;
+
+        }
+
+        .header {
+            background-color: green;
+            width: 100%;
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .header__menu li {
+            margin: 10px 0px;
+        }
+
+        .header__menu li a {
+            color: white;
+            text-decoration: none;
+
+        }
+
+        .header__img {
+            width: 200px;
+            margin-top: 10px;
+            margin-left: 10px;
+
+        }
+
+        .header__menu {
+            margin-top: 20px;
+            margin-right: -199px;
+        }
+
+        .header__menu ul {
+
+            display: none;
+            list-style: none;
+            padding: 0px;
+            position: absolute;
+            width: 100px;
+            text-align: right;
+            margin: 0px 0px 0px -14px;
+        }
+
+        .header__menu:hover ul,
+        ul:hover {
+            display: block;
+        }
+
+        .header__menu li a {
+
+            color: white;
+            text-decoration: none;
+        }
+
+        .header__menu li:hover {
+            text-decoration: underline;
+        }
+
+
+        .header__menu--profile {
+            margin-right: 8px;
+            width: 40px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .header__menu--profile img {
+            margin-right: 8px;
+            width: 100%;
+        }
+
+        .header__menu--profile p {
+            margin: 0px;
+            color: white;
+        }
+        .main{
+            height: 300px;
+        }
+        .main__title {
+            color: white;
+            font-size: 25px;
+        }
+        .input{
+           background-color: rgba(255, 255, 255, 0.1);
+            border: 2px solid white;
+            border-radius: 25px;
+            color: white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 16px;
+            height: 50px;
+            padding: 0px 20px;
+            width: 70%;
+        }
+        ::placeholder{
+            color: white;
+        }
+
     </style>
 
 
@@ -101,63 +160,28 @@
 
     <header class="header">
 
-        <img class="header__img" class1="main__img@" src="./Asset/images/logo-platzi-video-BW2.png" alt="">
+
+        <img class="header__img" src="./Asset/images/logo-platzi-video-BW2.png" alt="">
         <div class="header__menu">
             <div class="header__menu--profile">
-                <img src="" alt="">
+                <img src="./Asset/images/icons8-usuario-masculino-en-círculo-24.png" alt="User">
                 <p>Perfil</p>
             </div>
+            <ul>
+
+                <li><a href="/">Cuenta</a></li>
+                <li><a href="/">Cerrar Sesión</a></li>
+            </ul>
+
         </div>
-    </header>
-
-    <section class="main">
-
-        <form class="main__form">
-            <p></p>
-            <main1>
-               <b>Seccion Principal</b>
-            </main1>
-             <p></p>
-            <input class="main__form--input" type="text" placeholder="Nombre">
-            <input class="main__form--input" type="text" placeholder="Contraseña">
-
-        </form>
-    </section>
-    <nav>
-        <ul>
-            <li><a href="">Cuenta</a></li>
-            <li><a href="">Cerrar Sesión</a></li>
-        </ul>
-    </nav>
-    <h1>Esta es mi primera vez programandig</h1>
-    <div>
-
-        <p>Estoy triste el davido me regaño </p>
-
-
-        <p id="joto">1 A</p>
-        <p>2 B</p>
-        <p>3 C</p>
-        <p>4 D</p>
-
-    </div>
-    </ol>
-   
-    <nav>
-        <ul>
-            <li> <a href="#">Contacto </a></li>
-        </ul>
-    </nav>
-    <section>
-        <em>hola</em>
-        <i>hola</i>
-    </section>
-
 
     <img id="Log" src="file:///Users/carlo/Downloads/logo-platzi-video-BW2.png" alt="">
 
     </header>
-
+<section class="main">
+    <h2 class="main__title">¿Que vas a ver csm?</h2>
+    <input class="input" type="text" placeholder="Buscar...">
+</section>
 </body>
 
 </html>
