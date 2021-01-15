@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .main {
+
+padding: 50px;
+
+}
+
+.main__form {
+width: 358px;
+margin: 0 auto;
+
+}
+
+
+.main1 {
+margin-top: 10px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 24em;
+font-style: italic;
+}
+
+body {
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+margin: 0px;
+background-color: black;
+
+}
+
+.header {
+background-color: green;
+width: 100%;
+height: 60px;
+display: flex;
+justify-content: space-between;
+}
+
+.header__menu li {
+margin: 10px 0px;
+}
+
+.header__menu li a {
+color: white;
+text-decoration: none;
+
+}
+
+.header__img {
+width: 200px;
+margin-top: 10px;
+margin-left: 10px;
+
+}
+
+.header__menu {
+margin-top: 20px;
+margin-right: -199px;
+}
+
+.header__menu ul {
+
+display: none;
+list-style: none;
+padding: 0px;
+position: absolute;
+width: 100px;
+text-align: right;
+margin: 0px 0px 0px -14px;
+}
+
+.header__menu:hover ul,
+ul:hover {
+display: block;
+}
+
+.header__menu li a {
+
+color: white;
+text-decoration: none;
+}
+
+.header__menu li:hover {
+text-decoration: underline;
+}
+
+
+.header__menu--profile {
+margin-right: 8px;
+width: 40px;
+display: flex;
+align-items: center;
+cursor: pointer;
+}
+
+.header__menu--profile img {
+margin-right: 8px;
+width: 100%;
+}
+
+.header__menu--profile p {
+margin: 0px;
+color: white;
+}
+
+.main {
+height: 300px;
+}
+
+.main__title {
+color: white;
+font-size: 25px;
+}
+    .input {
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 2px solid white;
+        border-radius: 25px;
+        color: white;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 16px;
+        height: 50px;
+        padding: 0px 20px;
+        width: 70%;
+    }
+
+    ::placeholder {
+        color: white;
+    }
+    .carousel{
+        width: 100%;
+        overflow: scroll;
+        padding: 30px;
+        position: relative;
+
+    }
+    .carousel__container {
+        white-space: nowrap;
+        margin: 70px 0px;
+        padding-bottom: 10px;
+    }
+    .carousel_item {
+        background-color: palevioletred;
+        width: 100%;
+        height: 200px;
+        border-radius: 20px;
+        overflow: hidden;
+        margin-right: 10px;
+        display: inline-block;
+        cursor: pointer;
+
+    }
+    
+        .carousel_item:hover ~ .carousel_item  {
+        transform: translate3d(100px, 0, 0);
+    }
+
+    .carousel_item:hover .carousel_item {
+        opacity: 0.3;
+    }
+
+    .carousel_item:hover .carousel_item:hover{
+        transform: scale(1.5);
+        opacity: 1;
+    }
+
+</style>
+</head>
+<body>
+    <header class="header">
+
+
+        <img class="header__img" src="./Asset/images/logo-platzi-video-BW2.png" alt="">
+        <div class="header__menu">
+            <div class="header__menu--profile">
+                <img src="./Asset/images/icons8-usuario-masculino-en-círculo-24.png" alt="User">
+                <p>Perfil</p>
+            </div>
+            <ul>
+
+                <li><a href="/">Cuenta</a></li>
+                <li><a href="/">Cerrar Sesión</a></li>
+            </ul>
+
+        </div>
+
+        <img id="Log" src="file:///Users/carlo/Downloads/logo-platzi-video-BW2.png" alt="">
+
+    </header>
+
+    <section class="main">
+        <h2 class="main__title">¿Que vas a ver csm?</h2>
+        <input class="input" type="text" placeholder="Buscar...">
+    </section>
+
+    <section class="carousel">
+        <div class="carousel__container">
+            <div class="carousel__item">
+            </div>
+    
+</body>
+</html>
