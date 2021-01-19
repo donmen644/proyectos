@@ -10,8 +10,6 @@ body {
 }
 
 
-
-
 #joto {
     color: teal;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -133,6 +131,7 @@ ul:hover {
     font-size: 25px;
 }
 
+
 .input {
     background-color: rgba(255, 255, 255, 0.1);
     border: 2px solid black;
@@ -152,6 +151,13 @@ ul:hover {
 
 ::placeholder {
     color: black;
+}
+.categories__title{
+    color:black;
+    font-size: 16px;
+    position: absolute;
+    padding-left: 30px;
+    width: 100%;
 }
 
 .carousel {
@@ -359,4 +365,17 @@ outline: none;
          flex-direction: column;
      }
  }
-
+.notfound{
+    width: 70%;
+    height: calc(100vh -200px);
+    text-align: center;
+    color: white;
+    margin: 0px auto;
+}
+.notfound__h2{
+    margin-top: 20px;
+    font-size: 100px;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+/
