@@ -41,7 +41,7 @@ body {
 
 
 .header {
-    background-color: green;
+    background: linear-gradient(#faa307, #ffba08, #f48c06);
     width: 100%;
     height: 60px;
     display: flex;
@@ -59,6 +59,7 @@ body {
 }
 
 .header__img {
+
     width: 200px;
     margin-top: 10px;
     margin-left: 50px;
@@ -154,10 +155,11 @@ ul:hover {
 }
 
 .carousel {
-    width: 100%;
-    overflow: scroll;
-    padding: 30px;
+    width: 500px;
+
+    padding: 0px 0px 0px 30px;
     position: relative;
+
 
 }
 
@@ -254,8 +256,10 @@ ul:hover {
     display: flex;
     flex-direction: column;
 }
+
 .login__container--form label {
     font-size: 14px;
+    cursor: pointer;
 
 }
 .login__container--remember-me{
@@ -263,12 +267,14 @@ ul:hover {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
+    cursor: pointer;
 
 }
 .login__container--remember-me a{
     color: white;
     font-size: 14px;
     text-decoration: none;
+  
 
 }
 .login__container--remember-me a:hover{
@@ -285,7 +291,7 @@ ul:hover {
     width: 30px;
     margin-right: 10px;
 }
-.login__container--regsiter a{
+.login__container--register a{
     color: white;
     font-weight: bold;
     font-size: 16px;
@@ -306,3 +312,51 @@ ul:hover {
 ::placeholder{
     color: white;
 }
+.button{
+background-color: rgba(255, 255, 255, 0.1);
+border: none;
+border-radius: 25px;
+color: white;
+font-size: 16px;
+font-weight: bold;
+font-family: sans-serif;
+height: 50px;
+letter-spacing: 1px;
+margin: 10px 0;
+cursor: pointer;
+-webkit-user-select: none;
+-ms-user-select: none;
+user-select: none;
+outline: none;
+}
+.footer{
+    background-color: #f48c06;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+.footer a {
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    padding-left: 30px;
+    text-decoration: none;
+}
+.footer a:hover{
+    text-decoration: underline;
+}
+ @media only screen and (max-width: 600px) {
+     .login__container{
+         background-color: transparent;
+         border: none;
+         padding: 0px;
+         width: 100%;
+     }
+
+     .footer{
+         align-items: flex-start;
+         flex-direction: column;
+     }
+ }
+
