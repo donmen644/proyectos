@@ -66,8 +66,9 @@ body {
 }
 
 .header__menu {
+    width: 80px;
     margin-top: 20px;
-    margin-right: 50px;
+    margin-right: 10px;
 }
 
 .header__menu ul {
@@ -78,6 +79,14 @@ body {
     width: 100px;
     text-align: right;
     margin: 15px 0px 0px -14px;
+
+}
+
+.header__menu * {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    pointer-events: none;
 }
 
 .header__menu:hover ul, ul:hover {
