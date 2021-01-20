@@ -5,6 +5,7 @@ body {
     background-color: white;
     background: url("./Asset/images/red1.jpg") no-repeat;
     background-size: cover;
+    height: 100vh;
   
 
 }
@@ -70,7 +71,6 @@ body {
 }
 
 .header__menu ul {
-
     display: none;
     list-style: none;
     padding: 0px;
@@ -80,8 +80,7 @@ body {
     margin: 15px 0px 0px -14px;
 }
 
-.header__menu:hover ul,
-ul:hover {
+.header__menu:hover ul, ul:hover {
     display: block;
 }
 
@@ -160,81 +159,9 @@ ul:hover {
     width: 100%;
 }
 
-.carousel {
-    width: 500px;
-
-    padding: 0px 0px 0px 30px;
-    position: relative;
 
 
-}
 
-.carousel__container {
-    white-space: nowrap;
-    margin: 70px 0px;
-    padding-bottom: 10px;
-}
-
-.carousel-item {
-    background-color: black;
-    width: 200px;
-    height: 250px;
-    border-radius: 50px;
-    margin-right: 40px;
-    display: inline-block;
-    cursor: pointer;
-    transition: 450ms;
-    overflow: hidden;
-    transform-origin: center left;
-    position: relative;
-}
-
-.carousel-item:hover~.carousel-item {
-    transform: translate3d(100px, 0, 0);
-}
-
-.carousel__container:hover .carousel-item {
-    opacity: 0.3;
-}
-
-.carousel__container:hover .carousel-item:hover {
-    transform: scale(1.5);
-    opacity: 1;
-}
-.carousel-item__img{
-    width: 200px;
-    height: 250px;
-    object-fit: cover;
-}
-.carousel-item__details{
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0 ) 100%);
-    font-size: 10px;
-    opacity: 1;
-    transition: 450ms opacity;
-    padding: 10px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
-.carousel-item__details{
-    width: 181x;
-    margin-top: 137px;
-    margin-left: 0px;
-    color:white
-   
-}
-.play{
-    width: 25px;
-    height: 25px;
-   
-}
-.plus{
-    
-    width: 25x;
-    height: 25px;
-}
 .login{
     
     display: flex;
@@ -380,4 +307,3 @@ outline: none;
     animation-duration: 2s;
     animation-iteration-count: infinite;
 }
-/
