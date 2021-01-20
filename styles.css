@@ -82,10 +82,8 @@ body {
 
 }
 
-.header__menu * {
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
+.header__menu img, .header__menu p {
+    pointer-events: none;
 }
 
 .header__menu:hover ul, ul:hover {
