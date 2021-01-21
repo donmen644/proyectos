@@ -17,13 +17,13 @@
     <header class="header">
         <img class="header__img" src="" alt="">
         <div class="header__menu">
-            <div class="header__menu--profile">
-                <img src="./Asset/images/icons8-usuario-masculino-en-círculo-24.png" alt="User">
+            <div class="header__menu--profile unselectable">
+                <img ondragstart="return false" src="./Asset/images/icons8-usuario-masculino-en-círculo-24.png" alt="User">
                 <p>Perfil</p>
             </div>
             <ul>
-                <li><a href="Cuenta"></a></li>
-                <li><a href="Cerrar Sesión"></a></li>
+                <li><a href="./login.html">Cuenta</a></li>
+                <li><a href="Cerrar Sesión">Cerrar sesión</a></li>
             </ul>
         </div>
 
@@ -54,9 +54,7 @@
         <a href="/">Centro de ayuda</a>
     </footer>
 
- <script>
-        document.querySelector(".header__menu--profile").addEventListener("touchstart", function() {}, true);
-    </script>
+
 
 </body>
 
