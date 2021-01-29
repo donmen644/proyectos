@@ -3,7 +3,10 @@ body{
     margin: 0px;
     position: relative;
 }
-
+@mixin flex {
+    display: flex;
+    
+}
 
 .login__container{
     @include flex;
